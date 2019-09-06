@@ -127,7 +127,7 @@
 					let that = this;
 					uni.navigateTo({
 						url: `/pages/login/login`
-					});
+					})
 				}
 			},			
 			

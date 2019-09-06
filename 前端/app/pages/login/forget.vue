@@ -2,6 +2,12 @@
 	<view class="forget">
 		
 		<view class="content">
+			<text@click="goback()">
+				<image src="../../static/back.png" 
+				style="width: 45rpx;height: 30rpx;
+				margin-top: 80rpx;margin-left: 30rpx;"></image>
+				<text style="font-size: 32rpx;font-family: '微软雅黑';color: #888888;">返回</text>
+			</text>
 			<!-- 主体 -->
 			<view class="main">
 				<view class="tips">若你忘记了密码，可在此重置新密码。</view>
@@ -128,6 +134,11 @@
 				},3000)
 				
 				
+			}
+			,goback(){
+				uni.navigateBack({
+				    delta: 1
+				});
 			}
 		}
 	}

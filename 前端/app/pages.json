@@ -55,7 +55,43 @@
             		"bounce": "none"
             	}
             }
-        }
+        },
+		{
+		    "path" : "pages/login/login",
+		    "style" : {
+		    	"app-plus": {
+		    		// #ifdef APP-PLUS
+		    		"titleNView": false,
+		    		"navigationBarTextStyle": "white",
+		    		// #endif
+		    		"bounce": "none"
+		    	}
+		    }
+		},
+		{
+		    "path" : "pages/login/forget",
+		    "style" : {
+		    	"app-plus": {
+		    		// #ifdef APP-PLUS
+		    		"titleNView": false,
+		    		"navigationBarTextStyle": "white",
+		    		// #endif
+		    		"bounce": "none"
+		    	}
+		    }
+		},
+		{
+		    "path" : "pages/login/register",
+		    "style" : {
+		    	"app-plus": {
+		    		// #ifdef APP-PLUS
+		    		"titleNView": false,
+		    		"navigationBarTextStyle": "white",
+		    		// #endif
+		    		"bounce": "none"
+		    	}
+		    }
+		}
     ],
 	"globalStyle": {
 		"navigationStyle": "custom",

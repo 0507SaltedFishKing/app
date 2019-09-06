@@ -16,15 +16,15 @@
 		<!-- #endif -->
 		
 		<!-- 顶部选项卡 -->
-		<scroll-view id="nav-bar" class="nav-bar" scroll-x scroll-with-animation :scroll-left="scrollLeft">
-			<view 
+		<scroll-view style="padding-left: 50rpx;" id="nav-bar" class="nav-bar" scroll-x scroll-with-animation :scroll-left="scrollLeft">
+			<view
 				v-for="(item,index) in tabBars" :key="item.id"
 				class="nav-item"
 				:class="{current: index === tabCurrentIndex}"
 				:id="'tab'+index"
 				@click="changeTab(index)"
 			>{{item.name}}</view>
-			<view class="nav-item"><image src="../../static/icon/select.png" style="width: 20%;height: 60%;padding-top: 30rpx;"></image></view>
+			<view class="nav-item"><image src="../../static/icon/select.png" style="width: 40%;height: 60%;padding-top: 30rpx;padding-right: 30rpx;"></image></view>
 		</scroll-view>
 		
 		<!-- 下拉刷新组件 -->

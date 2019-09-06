@@ -1,6 +1,12 @@
 <template>
 	<view class="login">
 		<view class="content">
+			<text@click="goback()">
+				<image src="../../static/back.png" 
+				style="width: 45rpx;height: 30rpx;
+				margin-top: 80rpx;margin-left: 30rpx;"></image>
+				<text style="font-size: 32rpx;font-family: '微软雅黑';color: #888888;">返回</text>
+			</text>
 			<!-- 头部logo -->
 			<view class="header">
 				<image :src="logoImage"></image>
@@ -25,19 +31,6 @@
 				:rotate="isRotate" 
 				@click.native="startLogin()"
 			></wButton>
-			
-			<!-- 其他登录 -->
-			<view class="other_login cuIcon">
-				<view class="login_icon">
-					<view class="cuIcon-weixin" @tap="login_weixin"></view>
-				</view>
-				<view class="login_icon">
-					<view class="cuIcon-weibo" @tap="login_weibo"></view>
-				</view>
-				<view class="login_icon">
-					<view class="cuIcon-github" @tap="login_github"></view>
-				</view>
-			</view>
 			
 			<!-- 底部信息 -->
 			<view class="footer">
@@ -158,32 +151,12 @@
 				// 	uni.hideLoading();
 				// })
 				
-		    }
-			,
-			login_weixin() {
-				//微信登录
-				uni.showToast({
-					icon: 'none',
-					position: 'bottom',
-					title: '...'
-				});
-			},
-			login_weibo() {
-				//微博登录
-				uni.showToast({
-					icon: 'none',
-					position: 'bottom',
-					title: '...'
-				});
-			},
-			login_github() {
-				//github登录
-				uni.showToast({
-					icon: 'none',
-					position: 'bottom',
-					title: '...'
+		    },goback(){
+				uni.navigateBack({
+				    delta: 1
 				});
 			}
+			
 		}
 	}
 </script>
