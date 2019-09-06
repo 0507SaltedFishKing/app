@@ -45,7 +45,7 @@
 			}
 		}
         ,{
-            "path" : "pages/nvue/nvue",
+            "path" : "pages/search/search",
             "style" : {
             	"app-plus": {
             		// #ifdef APP-PLUS
@@ -110,7 +110,7 @@
 	            "text" : "发车"
 	        },
 			{
-			    "pagePath" : "pages/nvue/nvue",
+			    "pagePath" : "pages/search/search",
 			    "iconPath" : "static/icon_add.png",
 			    "selectedIconPath" : "static/icon/jiankongdingwei.png",
 			    "text" : "深入"
