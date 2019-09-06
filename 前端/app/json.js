@@ -10,9 +10,6 @@ const tabList = [{
 }, {
 	name: '话题',
 	id: '4'
-},{
-	name: '热点',
-	id: '5'
 }];
 const newsList = [{
 		id: 1,

@@ -24,6 +24,7 @@
 				:id="'tab'+index"
 				@click="changeTab(index)"
 			>{{item.name}}</view>
+			<view class="nav-item"><image src="../../static/icon/select.png" width="30px" height="30px"></image></view>
 		</scroll-view>
 		
 		<!-- 下拉刷新组件 -->

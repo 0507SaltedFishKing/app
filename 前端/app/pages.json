@@ -58,9 +58,7 @@
         }
     ],
 	"globalStyle": {
-		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "新闻模版",
-		"navigationBarBackgroundColor": "#ec706b",
+		"navigationStyle": "custom",
 		"backgroundColor": "#f8f8f8"
 	},
 	"tabBar" : {
