@@ -3,7 +3,6 @@
 		{
 		    "path" : "pages/index/index",
 		    "style" : {
-		    	"navigationBarTitleText" : "首页",
 		    	"app-plus": {
 		    		"bounce": "none"
 		    	}
@@ -12,7 +11,6 @@
 	    ,{
 		    "path" : "pages/me/me",
 		    "style" : {
-		    	"navigationBarTitleText" : "个人中心",
 		    	"app-plus": {
 		    		"bounce": "none"
 		    	}
@@ -21,7 +19,6 @@
 	    ,{
             "path" : "pages/component/component",
             "style" : {
-				"navigationBarTitleText" : "组件使用示例",
 				"app-plus": {
 					"bounce": "none"
 				}
@@ -31,7 +28,6 @@
 		{
 		    "path" : "pages/details/details",
 		    "style" : {
-				"navigationBarTitleText" : "详情",
 				"app-plus": {
 					"navigationBarTextStyle": "white",
 					"bounce": "none"
@@ -41,7 +37,6 @@
 		{
 		    "path" : "pages/details/videoDetails",
 		    "style" : {
-				"navigationBarTitleText" : "",
 				"app-plus": {
 					"titleNView": false,
 					"navigationBarTextStyle": "white",
@@ -52,7 +47,6 @@
         ,{
             "path" : "pages/nvue/nvue",
             "style" : {
-            	"navigationBarTitleText" : "首页",
             	"app-plus": {
             		// #ifdef APP-PLUS
             		"titleNView": false,
@@ -85,7 +79,7 @@
 			    "pagePath" : "pages/nvue/nvue",
 			    "iconPath" : "static/icon/48icon_Add.png",
 			    "selectedIconPath" : "static/icon/jiankongdingwei.png",
-			    "text" : ""
+			    "text" : "深入"
 			},
 			 {
 			    "pagePath" : "pages/me/me",

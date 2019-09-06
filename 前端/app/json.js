@@ -1,8 +1,8 @@
 const tabList = [{
-	name: '关注',
+	name: '推荐',
 	id: '1',
 }, {
-	name: '推荐',
+	name: '关注',
 	id: '2'
 }, {
 	name: '帖子',
@@ -12,7 +12,7 @@ const tabList = [{
 	id: '4'
 },{
 	name: '热点',
-	id: '4'
+	id: '5'
 }];
 const newsList = [{
 		id: 1,
