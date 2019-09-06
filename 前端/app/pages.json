@@ -75,7 +75,7 @@
 	        },
 			{
 			    "pagePath" : "pages/nvue/nvue",
-			    "iconPath" : "static/icon/48icon_Add.png",
+			    "iconPath" : "static/icon_add.png",
 			    "selectedIconPath" : "static/icon/jiankongdingwei.png",
 			    "text" : "深入"
 			},

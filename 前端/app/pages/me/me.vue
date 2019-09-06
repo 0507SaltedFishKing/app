@@ -6,7 +6,7 @@
 			<image src="../../static/meBg.png"></image>
 			<view class="mePosition">
 				<view class="meMainBox">
-					
+					<view style="padding-top: 40rpx;"></view>
 					<!--头部-->
 					<view class="meHead">
 						<view class="meHeadAvatar"><image :src="avatarUrl" mode="aspectFill"></image></view>
@@ -125,13 +125,8 @@
 					
 				} else{
 					let that = this;
-					wx.getUserInfo({
-						success: function (res) {
-							//获取到的微信头像 昵称 性别
-							that.nickName = res.userInfo.nickName;
-							that.avatarUrl = res.userInfo.avatarUrl;
-							that.loginState = 1;
-						}
+					uni.navigateTo({
+						url: `/pages/login/login`
 					});
 				}
 			},			
