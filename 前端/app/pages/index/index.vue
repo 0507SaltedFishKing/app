@@ -16,7 +16,7 @@
 		<!-- #endif -->
 		
 		<!-- 顶部选项卡 -->
-		<scroll-view style="padding-left: 50rpx;" id="nav-bar" class="nav-bar" scroll-x scroll-with-animation :scroll-left="scrollLeft">
+		<scroll-view id="nav-bar" class="nav-bar" scroll-x scroll-with-animation :scroll-left="scrollLeft">
 			<view
 				v-for="(item,index) in tabBars" :key="item.id"
 				class="nav-item"
@@ -49,8 +49,12 @@
 							* class 和 style的绑定限制了一些语法，其他并没有不同
 						-->
 						<view v-for="(item, index) in tabItem.newsList" :key="index" class="news-item" @click="navToDetails(item)">
-							<text :class="['title', 'title'+item.type]">{{item.title}}</text>
-							<view v-if="item.images.length > 0" :class="['img-list', 'img-list'+item.type, item.images.length === 1 && item.type===3 ? 'img-list-single': '']">
+							<view :class="['bot', 'bot'+item.type]">
+								<image class="post_header" style="width: 70rpx;height: 70rpx;" src="../../static/avatar.png"></image>
+								<text class="author" style="line-height: 70rpx;padding-left: 20rpx;">{{item.author}}</text>
+							</view>
+							<text style="padding-left: 20rpx;" :class="['title', 'title'+item.type]">{{item.title}}</text>
+							<view style="padding-left: 20rpx;" v-if="item.images.length > 0" :class="['img-list', 'img-list'+item.type, item.images.length === 1 && item.type===3 ? 'img-list-single': '']">
 								<view 
 									v-for="(imgItem, imgIndex) in item.images" :key="imgIndex"
 									:class="['img-wrapper', 'img-wrapper'+item.type, item.images.length === 1 && item.type===3 ? 'img-wrapper-single': '']"
@@ -64,7 +68,6 @@
 							<!-- 空图片占位 -->
 							<view v-else class="img-empty"></view>
 							<view :class="['bot', 'bot'+item.type]">
-								<text class="author">{{item.author}}</text>
 								<text class="time">{{item.time}}</text>
 							</view>
 						</view>
@@ -399,9 +402,11 @@
 		background-color: #fff;
 	}
 	.title{
-		font-size: 32upx;
 		color: #303133;
 		line-height: 46upx;
+		font-size: 28rpx;
+		line-height: 40rpx;
+		margin: 10rpx 0rpx;
 	}
 	.bot{
 		flex-direction: row;
@@ -436,31 +441,8 @@
 		height: 20upx;
 	}
 	
-	/* 图在左 */
-	.img-list1{
-		position:absolute;
-		left: 30upx;
-		top: 24upx;
-	}
-	.title1{
-		padding-left: 240upx; 
-	}
-	.bot1{
-		padding-left: 240upx; 
-		margin-top: 20upx;
-	}
-	/* 图在右 */
-	.img-list2{
-		position:absolute;
-		right: 30upx;
-		top: 24upx;
-	}
-	.title2{
-		padding-right: 210upx; 
-	}
-	.bot2{
-		margin-top: 20upx;
-	}
+	
+	
 	/* 底部3图 */
 	.img-list3{
 		width: 700upx;
