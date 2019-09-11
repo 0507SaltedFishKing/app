@@ -160,6 +160,7 @@
 		user-select: none;
 		touch-callout: none;
 		background-color:#F3F3F3;
+		border:1rpx;
 
 		&>view {
 			padding: 24upx 30upx;
