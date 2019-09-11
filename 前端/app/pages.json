@@ -80,6 +80,18 @@
 		    		"bounce": "none"
 		    	}
 		    }
+		},
+		{
+		    "path" : "pages/more/more",
+		    "style" : {
+		    	"app-plus": {
+		    		// #ifdef APP-PLUS
+		    		"titleNView": false,
+		    		"navigationBarTextStyle": "white",
+		    		// #endif
+		    		"bounce": "none"
+		    	}
+		    }
 		}
     ],
 	"globalStyle": {
@@ -98,7 +110,12 @@
 	            "selectedIconPath" : "static/icon/2_deliver.png",
 	            "text" : "发车"
 	        },
-			
+			{
+			    "pagePath" : "pages/more/more",
+			    "iconPath" : "static/icon_add.png",
+			    "selectedIconPath" : "static/icon/jiankongdingwei.png",
+			    "text" : "深入"
+			},
 			 {
 			    "pagePath" : "pages/me/me",
 			    "iconPath" : "static/icon/account.png",
